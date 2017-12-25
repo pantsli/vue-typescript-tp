@@ -1,0 +1,12 @@
+{
+  "extends": "tslint-eslint-rules",
+  "globals": {
+    "require": true
+  },
+  "rules": {
+    "no-constant-condition": true,
+    "ter-indent": [true, 4],
+    "no-unused-expression":false,
+    "no-extra-semi":false
+  }
+}
