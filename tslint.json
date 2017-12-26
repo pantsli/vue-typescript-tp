@@ -1,11 +1,11 @@
 {
-  "extends": "tslint-eslint-rules",
+  "extends": "tslint-config-standard",
   "globals": {
     "require": true
   },
   "rules": {
     "no-constant-condition": true,
-    "ter-indent": [true, 4],
+    "ter-indent": [true, 2],
     "no-unused-expression":false,
     "no-extra-semi":false
   }

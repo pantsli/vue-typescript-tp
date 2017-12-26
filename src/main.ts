@@ -1,33 +1,25 @@
-
-// The Vue build version to load with the `import` command
-// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
-import App from './App.vue'
+import Component from 'vue-class-component'
 import router from './router'
+import App from './App.vue'
+
+import Element from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+Vue.use(Element)
+
+import '@common/scss/index.scss'
+import { format } from './filters'
+
+Component.registerHooks([
+  'beforeRouteEnter',
+  'beforeRouteLeave',
+  'beforeRouteUpdate'
+])
 
 Vue.config.productionTip = false
 
 new Vue({
-    el: '#app', router,
-    template: '<App/>',
-    components: { App }
+  el: '#app',
+  router,
+  render: h => h(App)
 })
-class Student {
-    fullName: string
-    constructor (public firstName: string, public middleInitial: string, public lastName: string) {
-        this.fullName = firstName + ' ' + middleInitial + ' ' + lastName
-    }
-}
-
-interface Person {
-    firstName: string,
-    lastName: string
-}
-
-function greeter (person: Person) {
-    return 'Hello, ' + person.firstName + ' ' + person.lastName
-}
-
-let user = new Student('Jane', 'M.', 'User')
-
-console.log(greeter(user))

@@ -1,8 +1,81 @@
+// 容器规范
+$container-width: 70rem;
+$container-min-width: 50rem;
+$body-bg: #eee;
+$header-height: 4rem;
+
+$module-bg: rgba(255,255,255,0.6);
+$module-hover-bg: rgba(0, 0, 0, 0.12);
+$header-fix-bg: rgba(255, 255, 255, 0.80);
+$mobile-aside-bg: #34393d;
+$mobile-bg: rgba(200, 200, 200, .3);
+$admin-bg: #24292e;
+
+// 圆滑度
+$radius: 4px;
+
+// 内边距
+$br: 4px;
+$xs-pad: .3rem;
+$sm-pad: .5rem;
+$normal-pad: 1rem;
+$md-pad: 1.2rem;
+$lg-pad: 1.5rem;
+$xlg-pad: 3rem;
+
 //颜色定义
-$color-background:#222;
+//variable.scss
+//交通橙
+$ral2009:#d65e39;
+//石墨灰
+$ral7024:#5b5b63;
+//信号灰
+$ral7004:#aba6ad;
+//交通黑
+$ral9017: #293436;
+//交通白
+$ral9016: #ffffff;
+//信号白
+$ral9003:#fdfbfc;
+
+$defaultColor:$ral9017;
+//
+$defaultAColor:$ral9017;
+//
+$bodyBgColor: $ral9016;
+//
+$iconColor:#407abd;
+//
+$btnBg:rgba(235, 241, 248, 0.7) !important;
+$titleColor:#333333 !important;
+$titleFontSize:16px;
+
+$color-background:$ral9016;
 $color-background-d:rgba(0,0,0,.3);
 $color-highlight-background:#333;
 $color-text:#fff;
+$color-text-d : rgba(255, 255, 255, 0.3);
+$color-text-l: rgba(255, 255, 255, 0.5);
+$color-text-ll : rgba(255, 255, 255, 0.8);
+
+$white: #fff;
+$black: #24292e;
+$darkBlack: darken($black, 3%);
+$lightBlack: lighten($black, 3);
+$blue: #20A0FF;
+$green: #5ab95c;
+$gyey: #efefef;
+$black-light: #555;
+$border-color: #d1d5da;
+$form-hover: #8391a5;
+$text: $black-light;
+$secondary: rgba(0, 0, 0, .54);
+$disabled: rgba(0, 0, 0, .38);
+$dividers: rgba(0, 0, 0, .26);
+$light-dark: $module-hover-bg;
+
+$tab-height:40px;
+$color-theme:#5b5b63;
 
 
 //字体定义规范
