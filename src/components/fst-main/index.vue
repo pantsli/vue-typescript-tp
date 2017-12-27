@@ -18,9 +18,21 @@
       FstTab
     }
   })
-  export default class MainMenu extends Vue {
+  export default class Main extends Vue {
     msg: string = 'Main ...'
+    private get version(): string {
+      return this.$store.state.version
+    }
+
+    beforeCreate (): void {
+      Promise.all([
+        this.$store.dispatch('getTpVersion')
+      ])
+    }
+
   }
+
+
 </script>
 
 <style lang="scss">

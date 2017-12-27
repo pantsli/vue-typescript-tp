@@ -7,6 +7,15 @@
     "no-constant-condition": true,
     "ter-indent": [true, 2],
     "no-unused-expression":false,
-    "no-extra-semi":false
+    "no-extra-semi":false,
+    "semicolon": false,
+    "no-unused-variable":false,
+    "no-use-before-declare":false,
+    "return-undefined":false,
+    "no-floating-promises":false,
+    "no-unnecessary-qualifier":false,
+    "no-unnecessary-type-assertion":false,
+    "strict-type-predi":false,
+    "strict-type-predicates":false
   }
 }

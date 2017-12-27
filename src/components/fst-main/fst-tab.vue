@@ -1,5 +1,8 @@
 <template>
   <div class="fst-tab">
+    <router-link class="tab-item" to="/home">
+      <span class="tab-link">Home</span>
+    </router-link>
     <router-link class="tab-item" to="/manage">
       <span class="tab-link">Manage</span>
     </router-link>

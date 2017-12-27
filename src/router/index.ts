@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
+import Home from '@components/fst-home/index.vue'
 import Manage from '@components/fst-manage/index.vue'
 import Program from '@components/fst-program/index.vue'
 import Communicate from '@components/fst-communicate/index.vue'
@@ -15,6 +16,9 @@ export default new Router({
     {
       path: '/',
       redirect: '/manage'
+    },{
+      path: '/home',
+      component: Home
     },{
       path: '/manage',
       component: Manage
