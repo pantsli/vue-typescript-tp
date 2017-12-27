@@ -2,7 +2,8 @@ import Vue from 'vue'
 import Component from 'vue-class-component'
 import router from './router'
 import store from './store'
-import App from './App.vue'
+import com1 from './demo/demo1/layout.vue'
+// import App from './App.vue'
 
 import Element from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
@@ -23,7 +24,7 @@ const app = new Vue({
   el: '#app',
   router,
   store,
-  render: h => h(App)
+  render: h => h(com1)
 })
 
 export default app
