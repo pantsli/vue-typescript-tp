@@ -25,14 +25,14 @@ export function getSerialNumber (): Promise<Ajax.AjaxResponse> {
 
 // 获取菜单
 export function getControllerModel (): Promise<Ajax.AjaxResponse> {
-  return ax.get('http://localhost:5580/fixed/controller/model?t=g')
+  return ax.get('/status_web_api/fixed/controller/model?t=g')
             .then((res: Ajax.AxiosResponse) => res.data)
             .catch((e: string) => console.error(e))
 }
 
 // 获取菜单
 export function getControllerVersion (): Promise<Ajax.AjaxResponse> {
-  return ax.get('http://localhost:5580/fixed/controller/version?t=g')
+  return ax.get('/status_web_api/fixed/controller/version?t=g')
             .then((res: Ajax.AxiosResponse) => res.data)
             .catch((e: string) => console.error(e))
 }

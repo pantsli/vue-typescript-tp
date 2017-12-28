@@ -1,6 +1,6 @@
 <template>
   <div class="fst-home">
-    {{msg}}
+    <h1>{{msg}}</h1>
     <p>tpVersion: {{tpVersion}}</p>
     <p>controllerVersion: {{controllerVersion}}</p>
     <p>serialNumber: {{serialNumber}}</p>

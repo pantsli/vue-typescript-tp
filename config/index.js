@@ -15,9 +15,9 @@ module.exports = {
         target: 'http://0.0.0.0:5599',
         pathRewrite: {'^/api': ''}
       },
-      '/statusServerApi': {
+      '/status_web_api': {
         target: 'http://0.0.0.0:5580',
-        pathRewrite: {'^/statusServerApi': ''}
+        pathRewrite: {'^/status_web_api': ''}
       }
     },
 

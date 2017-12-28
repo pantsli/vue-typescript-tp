@@ -7,7 +7,7 @@ const IS_DEV: boolean = process.env.NODE_ENV !== 'production'
 const API_ROOT: string = IS_DEV ? 'http://localhost:8080' : 'https://api.jkchao.cn/api/'
 
 const ax: any = axios.create({
-    baseURL: API_ROOT
+  baseURL: API_ROOT
 })
 
 // 拦截器
